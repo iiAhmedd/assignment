@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact Name" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Phone Number" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Category" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="210dp"
+        android:layout_height="43dp"
+        android:text="Save Contact"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="241dp"/>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search:\n - Choose category and press Filter to view contacts.\n - Press Show all to dispaly all contact"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="302dp"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="313dp"
+        android:layout_height="37dp"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="393dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filter"
+            tools:layout_editor_absoluteX="54dp"
+            tools:layout_editor_absoluteY="470dp"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show all"
+            tools:layout_editor_absoluteX="249dp"
+            tools:layout_editor_absoluteY="466dp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewContacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
